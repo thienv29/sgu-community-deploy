@@ -10,7 +10,7 @@ git checkout -- .env
 git pull
 yarn install
 npx prisma generate
-cp ../.env.demo .env
+cp ../env-be/.env.demo .env
 
 # config frontend
 cd ../sgu-community-fe

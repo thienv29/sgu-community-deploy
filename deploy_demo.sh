@@ -9,7 +9,7 @@ git checkout deploy
 git checkout -- .env
 git pull
 yarn install
-cp ../.env.demo .env
+cp ../env-be/.env.demo .env
 npx prisma generate
 yarn build
 
