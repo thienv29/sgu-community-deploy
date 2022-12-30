@@ -5,7 +5,7 @@ npx kill-port --port 3100
 
 # config backend
 cd sgu-community-be
-git checkout dev
+git checkout deploy
 git checkout -- .env
 git pull
 yarn install
@@ -14,7 +14,7 @@ cp ../.env.demo .env
 
 # config frontend
 cd ../sgu-community-fe
-git checkout dev
+git checkout deploy
 git checkout -- next.config.js
 git pull
 yarn install
