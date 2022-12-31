@@ -2,6 +2,7 @@ echo Hello, World!
 
 npx kill-port --port 5100
 npx kill-port --port 3100
+npx kill-port --port 3000
 
 # config backend
 cd sgu-community-be
