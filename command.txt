@@ -1,0 +1,4 @@
+chmod -R 777 .
+git config --global user.name "thienv29"
+git config --global user.email thienv29@gmail.com
+git config --global credential.helper store
