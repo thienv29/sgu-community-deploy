@@ -1,2 +1,4 @@
-/sgu-community-fe
-/sgu-community-be
+/k8s/sgu-community-fe
+/k8s/sgu-community-be
+/deploy_goorm/sgu-community-fe
+/deploy_goorm/sgu-community-be

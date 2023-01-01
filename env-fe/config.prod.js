@@ -9,6 +9,7 @@ const nextConfig = {
         BROWSER: 'none',
         PORT: 3100,
     },
+    output: "standalone"
 }
 
 module.exports = nextConfig

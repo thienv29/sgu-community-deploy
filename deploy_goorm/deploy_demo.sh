@@ -10,8 +10,9 @@ git checkout deploy
 git checkout -- .env
 git pull
 yarn install
+cp ../../env-be/.env.demo .env
 npx prisma generate
-cp ../env-be/.env.demo .env
+yarn build
 
 # config frontend
 cd ../sgu-community-fe
@@ -19,10 +20,11 @@ git checkout deploy
 git checkout -- next.config.js
 git pull
 yarn install
-cp ../env-fe/config.demo.js next.config.js
+cp ../../env-fe/config.demo.js next.config.js
+yarn build
 
 # back to root directory
 cd ..
 
 # run app
-concurrently "cd sgu-community-be && yarn dev" "cd sgu-community-fe && yarn dev"
+concurrently "cd sgu-community-be && yarn start" "cd sgu-community-fe && yarn start"
